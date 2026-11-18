@@ -1,0 +1,24 @@
+{
+  "name": "netspeed-guardian-agent",
+  "version": "1.0.0",
+  "description": "Always-on background agent for NetSpeed Guardian: speed testing, config storage, WhatsApp alerting, WebSocket live updates.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "install-systemd": "bash ./deploy/install-systemd.sh"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "dotenv": "^16.0.0",
+    "firebase-admin": "^12.0.0",
+    "node-fetch": "^3.0.0",
+    "pino": "^10.4.0",
+    "qrcode": "^1.5.4",
+    "ws": "^8.18.0"
+  }
+}

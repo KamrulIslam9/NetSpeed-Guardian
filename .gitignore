@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+venv/
+
+# Environment variables
+.env
+
+# Data directories
+agent/data/
+frontend/dist/
+
+# Logs
+agent/logs*.txt
+
+# Firebase service account (never commit!)
+firebase-service-account.json
+
+# Systemd temporary
+*.pid

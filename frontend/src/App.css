@@ -1,0 +1,67 @@
+.app {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s;
+}
+
+nav {
+  padding: 16px 24px;
+  background: var(--card-bg);
+  border-radius: 8px 8px 0 0;
+  margin: -24px -24px 24px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.9; }
+
+.btn-secondary {
+  background: #64748b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.speedometer { text-align: center; margin: 24px 0; }
+
+.svg-container svg { width: 100%; height: 100%; }

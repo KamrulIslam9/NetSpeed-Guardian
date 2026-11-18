@@ -1,0 +1,13 @@
+[Unit]
+Description=NetSpeed Guardian Background Agent
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/kali/myproject/netspeed-guardian/agent
+ExecStart=/home/kali/myproject/netspeed-guardian/agent/venv/bin/node src/index.js
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
